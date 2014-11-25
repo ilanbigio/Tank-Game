@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id195074" PGFVersion="0.19" GSCVersion="0.10.5">
+  <attributes>
+    <text id="name">Enemy Tank</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">80</real>
+      <real id="height">80</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">Green Body</image>
+    <text id="tags">Tank</text>
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id318666" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">I'm Alive</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id890007</text>
+        <text id="RHS">1</text>
+      </attributes>
+    </behavior>
+    <behavior id="id503197" class="SpawnAction" enabled="true">
+      <attributes>
+        <text id="name">Where's My Head?</text>
+        <text id="bundleName">Spawn.behavior</text>
+        <text id="prototypeKey">id409136</text>
+        <angle id="direction">0</angle>
+        <index id="directionSpace">0</index>
+        <real id="x">
+          <expression>
+            <string xml:space="preserve">0</string>
+            <string xml:space="preserve">
+</string>
+          </expression>
+        </real>
+        <real id="y">0</real>
+        <index id="positionSpace">0</index>
+        <index id="layerOrder">0</index>
+      </attributes>
+    </behavior>
+    <behavior id="id626253" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Destroy</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id485923" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey" />
+              <text id="actorTag">Weapons</text>
+              <real id="mode">1</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id978877" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+        <behavior id="id818880" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id890007</text>
+            <text id="RHS">0</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id915419" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Right</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id373650" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.position.x</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">=</text>
+              <real id="RHS">1</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id416982" class="RotateToAngleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rotate To Angle</text>
+            <text id="bundleName">RotateToAngle.behavior</text>
+            <boolean id="runToCompletion">true</boolean>
+            <angle id="angle">270</angle>
+            <index id="space">1</index>
+            <real id="angularVelocity">120</real>
+            <boolean id="continuousMovement">false</boolean>
+          </attributes>
+        </behavior>
+        <behavior id="id722504" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id525701" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">270</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id871729" class="ChangeVelocityAction" enabled="true">
+              <attributes>
+                <text id="name">Change Velocity</text>
+                <text id="bundleName">ChangeVelocity.behavior</text>
+                <angle id="direction">0</angle>
+                <index id="space">1</index>
+                <real id="speed">100</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors>
+            <behavior id="id998944" class="ChangeVelocityAction" enabled="true">
+              <attributes>
+                <text id="name">Change Velocity</text>
+                <text id="bundleName">ChangeVelocity.behavior</text>
+                <angle id="direction">0</angle>
+                <index id="space">0</index>
+                <real id="speed">0</real>
+              </attributes>
+            </behavior>
+          </elseBehaviors>
+        </behavior>
+        <behavior id="id993746" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">X &lt; 100</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id212454" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.position.x</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&gt;=</text>
+                  <real id="RHS">
+                    <expression>
+                      <string xml:space="preserve">random(800, 1000)</string>
+                    </expression>
+                  </real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id700096" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.id499472</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id722514" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Left</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id853293" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.id499472</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">=</text>
+              <real id="RHS">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id339900" class="RotateToAngleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rotate To Angle</text>
+            <text id="bundleName">RotateToAngle.behavior</text>
+            <boolean id="runToCompletion">true</boolean>
+            <angle id="angle">90</angle>
+            <index id="space">1</index>
+            <real id="angularVelocity">120</real>
+            <boolean id="continuousMovement">false</boolean>
+          </attributes>
+        </behavior>
+        <behavior id="id582574" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id990614" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">90</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id650248" class="ChangeVelocityAction" enabled="true">
+              <attributes>
+                <text id="name">Change Velocity</text>
+                <text id="bundleName">ChangeVelocity.behavior</text>
+                <angle id="direction">180</angle>
+                <index id="space">1</index>
+                <real id="speed">100</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors>
+            <behavior id="id892541" class="ChangeVelocityAction" enabled="true">
+              <attributes>
+                <text id="name">Change Velocity</text>
+                <text id="bundleName">ChangeVelocity.behavior</text>
+                <angle id="direction">0</angle>
+                <index id="space">0</index>
+                <real id="speed">0</real>
+              </attributes>
+            </behavior>
+          </elseBehaviors>
+        </behavior>
+        <behavior id="id860075" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">X &lt; 100</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id803176" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.position.x</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&lt;=</text>
+                  <real id="RHS">
+                    <expression>
+                      <string xml:space="preserve">random(100, 300)</string>
+                    </expression>
+                  </real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id661217" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.id499472</text>
+                <text id="RHS">1</text>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id572180" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Track Position</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">0</index>
+        <real id="interval">0</real>
+        <boolean id="runToCompletion">true</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id381272" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id170437</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.position.x" />
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id151819" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id575506</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.position.y" />
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">80</integer>
+        <integer id="tileHeight">80</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game GSCVersion="0.10.5" PGFVersion="0.19" title="My Great Project">
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">540</real>
+      <real id="height">360</real>
+    </size>
+    <text id="actorTags">All	Weapons	Tank</text>
+    <integer id="id870993" name="Tank X">0</integer>
+    <integer id="id847247" name="Tank Y">0</integer>
+    <integer id="id318274" name="Bullet Type">1</integer>
+    <integer id="id725923" name="Bullets?">5</integer>
+    <integer id="id170437" name="E Tank X">0</integer>
+    <integer id="id575506" name="E Tank Y">0</integer>
+    <integer id="id890007" name="E Tank Alive?">1</integer>
+    <integer id="id257246" name="Player Alive?">0</integer>
+    <integer id="id596730" name="Player Life">100</integer>
+  </attributes>
+  <tags />
+  <resolutionIndependence>0</resolutionIndependence>
+  <instructions>Add game instructions here.</instructions>
+  <resolution>0</resolution>
+  <longDescription>A simple game.</longDescription>
+  <prototypes>
+    <actor id="id576809" />
+    <actor id="id890510" />
+    <actor id="id339526" />
+    <actor id="id634343" />
+    <actor id="id637109" />
+    <actor id="id195074" />
+    <actor id="id409136" />
+    <actor id="id942679" />
+    <actor id="id581106" />
+    <actor id="id308091" />
+  </prototypes>
+  <plugins />
+  <scenes>
+    <scene id="id146273" />
+    <scene id="id149852" />
+  </scenes>
+</game>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.19" GSCVersion="0.10.5">
+  <sounds />
+  <images>
+    <image name="Black Body">
+      <file name="Black Body.png" size="379" />
+    </image>
+    <image name="Black Tank">
+      <file name="Black Tank.png" size="361" />
+    </image>
+    <image name="Background">
+      <file name="Background.png" size="13180" />
+    </image>
+    <image name="Bullet Simple">
+      <file name="Bullet Simple.png" size="209" />
+    </image>
+    <image name="Green Body">
+      <file name="Green Body.png" size="376" />
+    </image>
+    <image name="Green Tank">
+      <file name="Green Tank.png" size="384" />
+    </image>
+    <image name="Life Heart">
+      <file name="Life Heart.png" size="910" />
+    </image>
+  </images>
+  <behaviors />
+</assets>
