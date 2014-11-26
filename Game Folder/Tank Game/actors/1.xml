@@ -161,7 +161,7 @@
         <text id="name">Reload</text>
         <text id="bundleName">Timer.behavior</text>
         <index id="timerType">0</index>
-        <real id="interval">1</real>
+        <real id="interval">1.5</real>
         <boolean id="runToCompletion">false</boolean>
       </attributes>
       <behaviors>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id308091" PGFVersion="0.19" GSCVersion="0.10.5">
+<actor id="id494423" PGFVersion="0.19" GSCVersion="0.10.5">
   <attributes>
-    <text id="name">Spawner</text>
+    <text id="name">Game Bullets</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -23,42 +23,26 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id901050" class="RuleBehavior" enabled="true">
+    <behavior id="id804649" class="DisplayTextBehavior" enabled="true">
       <attributes>
-        <text id="name">Rule</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
+        <text id="name">Display Text</text>
+        <text id="bundleName">DisplayText.behavior</text>
+        <text id="text">
+          <expression>
+            <reference keypath="game.attributes.id725923" />
+          </expression>
+        </text>
+        <text id="font">Arial</text>
+        <real id="size">30</real>
+        <index id="alignment">1</index>
+        <boolean id="wrap">false</boolean>
+        <color id="color">
+          <real id="red">0</real>
+          <real id="green">0</real>
+          <real id="blue">0</real>
+          <real id="alpha">1</real>
+        </color>
       </attributes>
-      <conditions>
-        <condition id="id775622" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">game.attributes.id890007</text>
-            <text id="name">default name</text>
-          </attributes>
-          <predicate type="number">
-            <attributes>
-              <text id="operator">=</text>
-              <real id="RHS">0</real>
-            </attributes>
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id477547" class="SpawnAction" enabled="true">
-          <attributes>
-            <text id="name">Spawn Actor</text>
-            <text id="bundleName">Spawn.behavior</text>
-            <text id="prototypeKey">id195074</text>
-            <angle id="direction">0</angle>
-            <index id="directionSpace">0</index>
-            <real id="x">0</real>
-            <real id="y">0</real>
-            <index id="positionSpace">0</index>
-            <index id="layerOrder">0</index>
-          </attributes>
-        </behavior>
-      </behaviors>
     </behavior>
   </behaviors>
   <aspects>

@@ -23,6 +23,230 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
+    <behavior id="id333190" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Move Right</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id912219" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.rotation</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">=</text>
+              <real id="RHS">270</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id183622" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="key">
+            <attributes>
+              <text id="mode">down</text>
+              <text id="keyString">d</text>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id324376" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">0</angle>
+            <index id="space">1</index>
+            <real id="speed">100</real>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors>
+        <behavior id="id744352" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">0</angle>
+            <index id="space">0</index>
+            <real id="speed">0</real>
+          </attributes>
+        </behavior>
+      </elseBehaviors>
+    </behavior>
+    <behavior id="id140591" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Move Left</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id759867" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.rotation</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">=</text>
+              <real id="RHS">90</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id411359" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="key">
+            <attributes>
+              <text id="mode">down</text>
+              <text id="keyString">a</text>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id415156" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">180</angle>
+            <index id="space">1</index>
+            <real id="speed">100</real>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors>
+        <behavior id="id908948" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">0</angle>
+            <index id="space">0</index>
+            <real id="speed">0</real>
+          </attributes>
+        </behavior>
+      </elseBehaviors>
+    </behavior>
+    <behavior id="id657067" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Move Up</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id261004" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.rotation</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">=</text>
+              <real id="RHS">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id502809" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="key">
+            <attributes>
+              <text id="mode">down</text>
+              <text id="keyString">w</text>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id595806" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">90</angle>
+            <index id="space">1</index>
+            <real id="speed">100</real>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors>
+        <behavior id="id838243" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">0</angle>
+            <index id="space">0</index>
+            <real id="speed">0</real>
+          </attributes>
+        </behavior>
+      </elseBehaviors>
+    </behavior>
+    <behavior id="id487541" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Move Down</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id704310" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.rotation</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">=</text>
+              <real id="RHS">180</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id312245" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="key">
+            <attributes>
+              <text id="mode">down</text>
+              <text id="keyString">s</text>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id709238" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">270</angle>
+            <index id="space">1</index>
+            <real id="speed">100</real>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors>
+        <behavior id="id504315" class="ChangeVelocityAction" enabled="true">
+          <attributes>
+            <text id="name">Change Velocity</text>
+            <text id="bundleName">ChangeVelocity.behavior</text>
+            <angle id="direction">0</angle>
+            <index id="space">0</index>
+            <real id="speed">0</real>
+          </attributes>
+        </behavior>
+      </elseBehaviors>
+    </behavior>
     <behavior id="id661117" class="ChangeAttributeAction" enabled="true">
       <attributes>
         <text id="name">Alive</text>
@@ -68,64 +292,8 @@
             <angle id="angle">180</angle>
             <index id="space">1</index>
             <real id="angularVelocity">120</real>
-            <boolean id="continuousMovement">false</boolean>
+            <boolean id="continuousMovement">true</boolean>
           </attributes>
-        </behavior>
-        <behavior id="id487541" class="RuleBehavior" enabled="true">
-          <attributes>
-            <text id="name">Rule</text>
-            <text id="bundleName">Rule.behavior</text>
-            <real id="compoundConditionKind">0</real>
-          </attributes>
-          <conditions>
-            <condition id="id704310" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
-              <attributes>
-                <index id="conditionType">1</index>
-                <text id="subjectAttribute">self.attributes.rotation</text>
-                <text id="name">default name</text>
-              </attributes>
-              <predicate type="number">
-                <attributes>
-                  <text id="operator">=</text>
-                  <real id="RHS">180</real>
-                </attributes>
-              </predicate>
-            </condition>
-            <condition id="id312245" eventType="key" pluginPredicateTypeIndex="0" class="Key">
-              <attributes>
-                <text id="name">default name</text>
-                <index id="conditionType">0</index>
-              </attributes>
-              <predicate type="key">
-                <attributes>
-                  <text id="mode">down</text>
-                  <text id="keyString">s</text>
-                </attributes>
-              </predicate>
-            </condition>
-          </conditions>
-          <behaviors>
-            <behavior id="id709238" class="ChangeVelocityAction" enabled="true">
-              <attributes>
-                <text id="name">Change Velocity</text>
-                <text id="bundleName">ChangeVelocity.behavior</text>
-                <angle id="direction">270</angle>
-                <index id="space">1</index>
-                <real id="speed">100</real>
-              </attributes>
-            </behavior>
-          </behaviors>
-          <elseBehaviors>
-            <behavior id="id504315" class="ChangeVelocityAction" enabled="true">
-              <attributes>
-                <text id="name">Change Velocity</text>
-                <text id="bundleName">ChangeVelocity.behavior</text>
-                <angle id="direction">0</angle>
-                <index id="space">0</index>
-                <real id="speed">0</real>
-              </attributes>
-            </behavior>
-          </elseBehaviors>
         </behavior>
       </behaviors>
     </behavior>
@@ -158,64 +326,8 @@
             <angle id="angle">0</angle>
             <index id="space">1</index>
             <real id="angularVelocity">120</real>
-            <boolean id="continuousMovement">false</boolean>
+            <boolean id="continuousMovement">true</boolean>
           </attributes>
-        </behavior>
-        <behavior id="id657067" class="RuleBehavior" enabled="true">
-          <attributes>
-            <text id="name">Rule</text>
-            <text id="bundleName">Rule.behavior</text>
-            <real id="compoundConditionKind">0</real>
-          </attributes>
-          <conditions>
-            <condition id="id261004" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
-              <attributes>
-                <index id="conditionType">1</index>
-                <text id="subjectAttribute">self.attributes.rotation</text>
-                <text id="name">default name</text>
-              </attributes>
-              <predicate type="number">
-                <attributes>
-                  <text id="operator">=</text>
-                  <real id="RHS">0</real>
-                </attributes>
-              </predicate>
-            </condition>
-            <condition id="id502809" eventType="key" pluginPredicateTypeIndex="0" class="Key">
-              <attributes>
-                <text id="name">default name</text>
-                <index id="conditionType">0</index>
-              </attributes>
-              <predicate type="key">
-                <attributes>
-                  <text id="mode">down</text>
-                  <text id="keyString">w</text>
-                </attributes>
-              </predicate>
-            </condition>
-          </conditions>
-          <behaviors>
-            <behavior id="id595806" class="ChangeVelocityAction" enabled="true">
-              <attributes>
-                <text id="name">Change Velocity</text>
-                <text id="bundleName">ChangeVelocity.behavior</text>
-                <angle id="direction">90</angle>
-                <index id="space">1</index>
-                <real id="speed">100</real>
-              </attributes>
-            </behavior>
-          </behaviors>
-          <elseBehaviors>
-            <behavior id="id838243" class="ChangeVelocityAction" enabled="true">
-              <attributes>
-                <text id="name">Change Velocity</text>
-                <text id="bundleName">ChangeVelocity.behavior</text>
-                <angle id="direction">0</angle>
-                <index id="space">0</index>
-                <real id="speed">0</real>
-              </attributes>
-            </behavior>
-          </elseBehaviors>
         </behavior>
       </behaviors>
     </behavior>
@@ -248,64 +360,8 @@
             <angle id="angle">90</angle>
             <index id="space">1</index>
             <real id="angularVelocity">120</real>
-            <boolean id="continuousMovement">false</boolean>
+            <boolean id="continuousMovement">true</boolean>
           </attributes>
-        </behavior>
-        <behavior id="id140591" class="RuleBehavior" enabled="true">
-          <attributes>
-            <text id="name">Rule</text>
-            <text id="bundleName">Rule.behavior</text>
-            <real id="compoundConditionKind">0</real>
-          </attributes>
-          <conditions>
-            <condition id="id759867" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
-              <attributes>
-                <index id="conditionType">1</index>
-                <text id="subjectAttribute">self.attributes.rotation</text>
-                <text id="name">default name</text>
-              </attributes>
-              <predicate type="number">
-                <attributes>
-                  <text id="operator">=</text>
-                  <real id="RHS">90</real>
-                </attributes>
-              </predicate>
-            </condition>
-            <condition id="id411359" eventType="key" pluginPredicateTypeIndex="0" class="Key">
-              <attributes>
-                <text id="name">default name</text>
-                <index id="conditionType">0</index>
-              </attributes>
-              <predicate type="key">
-                <attributes>
-                  <text id="mode">down</text>
-                  <text id="keyString">a</text>
-                </attributes>
-              </predicate>
-            </condition>
-          </conditions>
-          <behaviors>
-            <behavior id="id415156" class="ChangeVelocityAction" enabled="true">
-              <attributes>
-                <text id="name">Change Velocity</text>
-                <text id="bundleName">ChangeVelocity.behavior</text>
-                <angle id="direction">180</angle>
-                <index id="space">1</index>
-                <real id="speed">100</real>
-              </attributes>
-            </behavior>
-          </behaviors>
-          <elseBehaviors>
-            <behavior id="id908948" class="ChangeVelocityAction" enabled="true">
-              <attributes>
-                <text id="name">Change Velocity</text>
-                <text id="bundleName">ChangeVelocity.behavior</text>
-                <angle id="direction">0</angle>
-                <index id="space">0</index>
-                <real id="speed">0</real>
-              </attributes>
-            </behavior>
-          </elseBehaviors>
         </behavior>
       </behaviors>
     </behavior>
@@ -338,64 +394,8 @@
             <angle id="angle">270</angle>
             <index id="space">1</index>
             <real id="angularVelocity">120</real>
-            <boolean id="continuousMovement">false</boolean>
+            <boolean id="continuousMovement">true</boolean>
           </attributes>
-        </behavior>
-        <behavior id="id333190" class="RuleBehavior" enabled="true">
-          <attributes>
-            <text id="name">Rule</text>
-            <text id="bundleName">Rule.behavior</text>
-            <real id="compoundConditionKind">0</real>
-          </attributes>
-          <conditions>
-            <condition id="id912219" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
-              <attributes>
-                <index id="conditionType">1</index>
-                <text id="subjectAttribute">self.attributes.rotation</text>
-                <text id="name">default name</text>
-              </attributes>
-              <predicate type="number">
-                <attributes>
-                  <text id="operator">=</text>
-                  <real id="RHS">270</real>
-                </attributes>
-              </predicate>
-            </condition>
-            <condition id="id183622" eventType="key" pluginPredicateTypeIndex="0" class="Key">
-              <attributes>
-                <text id="name">default name</text>
-                <index id="conditionType">0</index>
-              </attributes>
-              <predicate type="key">
-                <attributes>
-                  <text id="mode">down</text>
-                  <text id="keyString">d</text>
-                </attributes>
-              </predicate>
-            </condition>
-          </conditions>
-          <behaviors>
-            <behavior id="id324376" class="ChangeVelocityAction" enabled="true">
-              <attributes>
-                <text id="name">Change Velocity</text>
-                <text id="bundleName">ChangeVelocity.behavior</text>
-                <angle id="direction">0</angle>
-                <index id="space">1</index>
-                <real id="speed">100</real>
-              </attributes>
-            </behavior>
-          </behaviors>
-          <elseBehaviors>
-            <behavior id="id744352" class="ChangeVelocityAction" enabled="true">
-              <attributes>
-                <text id="name">Change Velocity</text>
-                <text id="bundleName">ChangeVelocity.behavior</text>
-                <angle id="direction">0</angle>
-                <index id="space">0</index>
-                <real id="speed">0</real>
-              </attributes>
-            </behavior>
-          </elseBehaviors>
         </behavior>
       </behaviors>
     </behavior>

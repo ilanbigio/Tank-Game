@@ -3,6 +3,98 @@
   <layers>
     <layer id="id456133">
       <actors>
+        <actor id="id287379" prototype="id671241">
+          <attributes>
+            <point id="position">
+              <real id="x">260</real>
+              <real id="y">680</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">19</real>
+            </size>
+            <angle id="rotation">90</angle>
+            <text id="name">Bullet Display Copy 4</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id120344" prototype="id671241">
+          <attributes>
+            <point id="position">
+              <real id="x">240</real>
+              <real id="y">680</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">19</real>
+            </size>
+            <angle id="rotation">90</angle>
+            <text id="name">Bullet Display Copy 3</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id515560" prototype="id671241">
+          <attributes>
+            <point id="position">
+              <real id="x">220</real>
+              <real id="y">680</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">19</real>
+            </size>
+            <angle id="rotation">90</angle>
+            <text id="name">Bullet Display Copy 2</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id521454" prototype="id671241">
+          <attributes>
+            <point id="position">
+              <real id="x">200</real>
+              <real id="y">680</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">19</real>
+            </size>
+            <angle id="rotation">90</angle>
+            <text id="name">Bullet Display Copy 1</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
         <actor id="id519408" prototype="id339526">
           <attributes>
             <point id="position">
@@ -14,37 +106,6 @@
               <real id="height">742</real>
             </size>
             <angle id="rotation">0</angle>
-          </attributes>
-          <aspects>
-            <graphics>
-              <attributes>
-                <integer id="tileWidth" name="tileWidth">0</integer>
-                <integer id="tileHeight" name="tileHeight">0</integer>
-              </attributes>
-            </graphics>
-            <motion />
-            <physics>
-              <attributes />
-            </physics>
-          </aspects>
-        </actor>
-        <actor id="id949144" prototype="id634343">
-          <attributes>
-            <point id="position">
-              <real id="x">538</real>
-              <real id="y">364.5</real>
-            </point>
-            <size id="size">
-              <real id="width">1106</real>
-              <real id="height">739</real>
-            </size>
-            <angle id="rotation">0</angle>
-            <color id="color">
-              <real id="red">0</real>
-              <real id="green">0</real>
-              <real id="blue">0</real>
-              <real id="alpha">0.192156862745098</real>
-            </color>
           </attributes>
           <aspects>
             <graphics>
@@ -120,10 +181,14 @@
               <real id="height">80</real>
             </size>
             <angle id="rotation">0</angle>
+            <integer id="id239806" name="Right?">1</integer>
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -145,7 +210,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -169,7 +237,37 @@
             <graphics>
               <attributes>
                 <boolean id="visible">false</boolean>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
               </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id611894" prototype="id494423">
+          <attributes>
+            <point id="position">
+              <real id="x">91</real>
+              <real id="y">503</real>
+            </point>
+            <size id="size">
+              <real id="width">120</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">0</real>
+            </color>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
             </graphics>
             <motion />
             <physics>

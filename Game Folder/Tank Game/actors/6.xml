@@ -98,7 +98,7 @@
         <condition id="id373650" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
           <attributes>
             <index id="conditionType">1</index>
-            <text id="subjectAttribute">self.attributes.position.x</text>
+            <text id="subjectAttribute">self.attributes.id239806</text>
             <text id="name">default name</text>
           </attributes>
           <predicate type="number">
@@ -195,7 +195,7 @@
               <attributes>
                 <text id="name">Change Attribute</text>
                 <text id="bundleName">ChangeAttribute.behavior</text>
-                <text id="targetAttribute">self.attributes.id499472</text>
+                <text id="targetAttribute">self.attributes.id239806</text>
                 <text id="RHS">0</text>
               </attributes>
             </behavior>
@@ -213,7 +213,7 @@
         <condition id="id853293" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
           <attributes>
             <index id="conditionType">1</index>
-            <text id="subjectAttribute">self.attributes.id499472</text>
+            <text id="subjectAttribute">self.attributes.id239806</text>
             <text id="name">default name</text>
           </attributes>
           <predicate type="number">
@@ -310,7 +310,7 @@
               <attributes>
                 <text id="name">Change Attribute</text>
                 <text id="bundleName">ChangeAttribute.behavior</text>
-                <text id="targetAttribute">self.attributes.id499472</text>
+                <text id="targetAttribute">self.attributes.id239806</text>
                 <text id="RHS">1</text>
               </attributes>
             </behavior>
