@@ -18,7 +18,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -41,7 +44,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -64,7 +70,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -87,7 +96,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -173,8 +185,8 @@
         <actor id="id985568" prototype="id195074">
           <attributes>
             <point id="position">
-              <real id="x">506</real>
-              <real id="y">123</real>
+              <real id="x">1005</real>
+              <real id="y">649</real>
             </point>
             <size id="size">
               <real id="width">80</real>
@@ -224,8 +236,8 @@
         <actor id="id675025" prototype="id308091">
           <attributes>
             <point id="position">
-              <real id="x">540</real>
-              <real id="y">361</real>
+              <real id="x">0</real>
+              <real id="y">0</real>
             </point>
             <size id="size">
               <real id="width">120</real>
@@ -267,7 +279,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>

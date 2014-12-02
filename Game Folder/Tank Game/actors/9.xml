@@ -46,7 +46,7 @@
     </behavior>
     <behavior id="id795985" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Rule</text>
+        <text id="name">Disp 1</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
@@ -83,7 +83,7 @@
     </behavior>
     <behavior id="id651049" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Rule</text>
+        <text id="name">Disp 2</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
@@ -97,7 +97,7 @@
           <predicate type="number">
             <attributes>
               <text id="operator">&gt;</text>
-              <real id="RHS">0</real>
+              <real id="RHS">1</real>
             </attributes>
           </predicate>
         </condition>
@@ -107,10 +107,10 @@
           <attributes>
             <text id="name">Spawn Actor</text>
             <text id="bundleName">Spawn.behavior</text>
-            <text id="prototypeKey">id671241</text>
+            <text id="prototypeKey">id308038</text>
             <angle id="direction">90</angle>
             <index id="directionSpace">0</index>
-            <real id="x">180</real>
+            <real id="x">200</real>
             <real id="y">680</real>
             <index id="positionSpace">1</index>
             <index id="layerOrder">0</index>
@@ -120,7 +120,7 @@
     </behavior>
     <behavior id="id692517" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Rule</text>
+        <text id="name">Disp 3</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
@@ -134,7 +134,7 @@
           <predicate type="number">
             <attributes>
               <text id="operator">&gt;</text>
-              <real id="RHS">0</real>
+              <real id="RHS">2</real>
             </attributes>
           </predicate>
         </condition>
@@ -144,10 +144,10 @@
           <attributes>
             <text id="name">Spawn Actor</text>
             <text id="bundleName">Spawn.behavior</text>
-            <text id="prototypeKey">id671241</text>
+            <text id="prototypeKey">id580478</text>
             <angle id="direction">90</angle>
             <index id="directionSpace">0</index>
-            <real id="x">180</real>
+            <real id="x">220</real>
             <real id="y">680</real>
             <index id="positionSpace">1</index>
             <index id="layerOrder">0</index>
@@ -157,7 +157,7 @@
     </behavior>
     <behavior id="id996467" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Rule</text>
+        <text id="name">Disp 4</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
@@ -171,7 +171,7 @@
           <predicate type="number">
             <attributes>
               <text id="operator">&gt;</text>
-              <real id="RHS">0</real>
+              <real id="RHS">3</real>
             </attributes>
           </predicate>
         </condition>
@@ -181,10 +181,10 @@
           <attributes>
             <text id="name">Spawn Actor</text>
             <text id="bundleName">Spawn.behavior</text>
-            <text id="prototypeKey">id671241</text>
+            <text id="prototypeKey">id961573</text>
             <angle id="direction">90</angle>
             <index id="directionSpace">0</index>
-            <real id="x">180</real>
+            <real id="x">240</real>
             <real id="y">680</real>
             <index id="positionSpace">1</index>
             <index id="layerOrder">0</index>
@@ -208,7 +208,7 @@
           <predicate type="number">
             <attributes>
               <text id="operator">&gt;</text>
-              <real id="RHS">0</real>
+              <real id="RHS">4</real>
             </attributes>
           </predicate>
         </condition>
@@ -218,10 +218,10 @@
           <attributes>
             <text id="name">Spawn Actor</text>
             <text id="bundleName">Spawn.behavior</text>
-            <text id="prototypeKey">id671241</text>
+            <text id="prototypeKey">id981335</text>
             <angle id="direction">90</angle>
             <index id="directionSpace">0</index>
-            <real id="x">180</real>
+            <real id="x">260</real>
             <real id="y">680</real>
             <index id="positionSpace">1</index>
             <index id="layerOrder">0</index>

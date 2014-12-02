@@ -265,7 +265,7 @@
     </behavior>
     <behavior id="id565353" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Move Down</text>
+        <text id="name">Spin Down</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
@@ -284,22 +284,72 @@
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id655499" class="RotateToAngleBehavior" enabled="true">
+        <behavior id="id471479" class="RuleBehavior" enabled="true">
           <attributes>
-            <text id="name">Rotate To Angle</text>
-            <text id="bundleName">RotateToAngle.behavior</text>
-            <boolean id="runToCompletion">true</boolean>
-            <angle id="angle">180</angle>
-            <index id="space">1</index>
-            <real id="angularVelocity">120</real>
-            <boolean id="continuousMovement">true</boolean>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">1</real>
           </attributes>
+          <conditions>
+            <condition id="id854828" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id235447" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">270</real>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id552004" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">90</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id655499" class="RotateToAngleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rotate To Angle</text>
+                <text id="bundleName">RotateToAngle.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <angle id="angle">180</angle>
+                <index id="space">1</index>
+                <real id="angularVelocity">120</real>
+                <boolean id="continuousMovement">true</boolean>
+              </attributes>
+            </behavior>
+          </behaviors>
         </behavior>
       </behaviors>
     </behavior>
     <behavior id="id957096" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Move Up</text>
+        <text id="name">Spin Up</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
@@ -318,22 +368,72 @@
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id453314" class="RotateToAngleBehavior" enabled="true">
+        <behavior id="id456152" class="RuleBehavior" enabled="true">
           <attributes>
-            <text id="name">Rotate To Angle</text>
-            <text id="bundleName">RotateToAngle.behavior</text>
-            <boolean id="runToCompletion">true</boolean>
-            <angle id="angle">0</angle>
-            <index id="space">1</index>
-            <real id="angularVelocity">120</real>
-            <boolean id="continuousMovement">true</boolean>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">1</real>
           </attributes>
+          <conditions>
+            <condition id="id901361" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">180</real>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id607788" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">270</real>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id629790" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">90</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id453314" class="RotateToAngleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rotate To Angle</text>
+                <text id="bundleName">RotateToAngle.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <angle id="angle">0</angle>
+                <index id="space">1</index>
+                <real id="angularVelocity">120</real>
+                <boolean id="continuousMovement">true</boolean>
+              </attributes>
+            </behavior>
+          </behaviors>
         </behavior>
       </behaviors>
     </behavior>
     <behavior id="id415419" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Move Left</text>
+        <text id="name">Spin Left</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
@@ -352,22 +452,72 @@
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id943671" class="RotateToAngleBehavior" enabled="true">
+        <behavior id="id398348" class="RuleBehavior" enabled="true">
           <attributes>
-            <text id="name">Rotate To Angle</text>
-            <text id="bundleName">RotateToAngle.behavior</text>
-            <boolean id="runToCompletion">true</boolean>
-            <angle id="angle">90</angle>
-            <index id="space">1</index>
-            <real id="angularVelocity">120</real>
-            <boolean id="continuousMovement">true</boolean>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">1</real>
           </attributes>
+          <conditions>
+            <condition id="id958369" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id553769" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">270</real>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id254672" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">180</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id943671" class="RotateToAngleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rotate To Angle</text>
+                <text id="bundleName">RotateToAngle.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <angle id="angle">90</angle>
+                <index id="space">1</index>
+                <real id="angularVelocity">120</real>
+                <boolean id="continuousMovement">true</boolean>
+              </attributes>
+            </behavior>
+          </behaviors>
         </behavior>
       </behaviors>
     </behavior>
     <behavior id="id950847" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Move Right</text>
+        <text id="name">Spin Right</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
@@ -386,16 +536,66 @@
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id207989" class="RotateToAngleBehavior" enabled="true">
+        <behavior id="id760442" class="RuleBehavior" enabled="true">
           <attributes>
-            <text id="name">Rotate To Angle</text>
-            <text id="bundleName">RotateToAngle.behavior</text>
-            <boolean id="runToCompletion">true</boolean>
-            <angle id="angle">270</angle>
-            <index id="space">1</index>
-            <real id="angularVelocity">120</real>
-            <boolean id="continuousMovement">true</boolean>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">1</real>
           </attributes>
+          <conditions>
+            <condition id="id265506" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id101028" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">180</real>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id482912" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.rotation</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">90</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id207989" class="RotateToAngleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rotate To Angle</text>
+                <text id="bundleName">RotateToAngle.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <angle id="angle">270</angle>
+                <index id="space">1</index>
+                <real id="angularVelocity">120</real>
+                <boolean id="continuousMovement">true</boolean>
+              </attributes>
+            </behavior>
+          </behaviors>
         </behavior>
       </behaviors>
     </behavior>
