@@ -259,11 +259,33 @@
             </physics>
           </aspects>
         </actor>
-        <actor id="id611894" prototype="id494423">
+        <actor id="id672473" prototype="id449924">
           <attributes>
             <point id="position">
-              <real id="x">91</real>
-              <real id="y">503</real>
+              <real id="x">48</real>
+              <real id="y">550</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">38</real>
+            </size>
+            <angle id="rotation">90</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id799811" prototype="id462968">
+          <attributes>
+            <point id="position">
+              <real id="x">50</real>
+              <real id="y">545</real>
             </point>
             <size id="size">
               <real id="width">120</real>
@@ -279,10 +301,7 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes>
-                <integer id="tileWidth" name="tileWidth">0</integer>
-                <integer id="tileHeight" name="tileHeight">0</integer>
-              </attributes>
+              <attributes />
             </graphics>
             <motion />
             <physics>

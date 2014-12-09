@@ -21,6 +21,7 @@
     <image id="image">Green Body</image>
     <text id="tags">Tank</text>
     <boolean id="preloadArt">true</boolean>
+    <integer id="id785466" name="Life">50</integer>
   </attributes>
   <behaviors>
     <behavior id="id318666" class="ChangeAttributeAction" enabled="true">
@@ -29,6 +30,14 @@
         <text id="bundleName">ChangeAttribute.behavior</text>
         <text id="targetAttribute">game.attributes.id890007</text>
         <text id="RHS">1</text>
+      </attributes>
+    </behavior>
+    <behavior id="id453776" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">self.attributes.id785466</text>
+        <text id="RHS">10</text>
       </attributes>
     </behavior>
     <behavior id="id503197" class="SpawnAction" enabled="true">
@@ -50,6 +59,80 @@
         <index id="layerOrder">0</index>
       </attributes>
     </behavior>
+    <behavior id="id933669" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Hurt</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id820566" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id637109</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id737386" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id785466</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.id785466" />
+                <string xml:space="preserve">-10</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id943186" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Hurt</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id999348" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id892796</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id695695" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id785466</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.id785466" />
+                <string xml:space="preserve">-50</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
     <behavior id="id626253" class="RuleBehavior" enabled="true">
       <attributes>
         <text id="name">Destroy</text>
@@ -57,16 +140,16 @@
         <real id="compoundConditionKind">0</real>
       </attributes>
       <conditions>
-        <condition id="id485923" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+        <condition id="id159155" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
           <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.id785466</text>
             <text id="name">default name</text>
-            <index id="conditionType">0</index>
           </attributes>
-          <predicate type="collision">
+          <predicate type="number">
             <attributes>
-              <text id="prototypeKey" />
-              <text id="actorTag">Weapons</text>
-              <real id="mode">1</real>
+              <text id="operator">&lt;=</text>
+              <real id="RHS">0</real>
             </attributes>
           </predicate>
         </condition>
@@ -85,6 +168,55 @@
             <text id="targetAttribute">game.attributes.id890007</text>
             <text id="RHS">0</text>
           </attributes>
+        </behavior>
+        <behavior id="id467944" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id830890</text>
+            <text id="RHS">
+              <expression>
+                <string xml:space="preserve">random(0, 1)</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id630233" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Drop</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id550378" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id830890</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">1</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id864481" class="SpawnAction" enabled="true">
+              <attributes>
+                <text id="name">Spawn Actor</text>
+                <text id="bundleName">Spawn.behavior</text>
+                <text id="prototypeKey">id837880</text>
+                <angle id="direction">0</angle>
+                <index id="directionSpace">0</index>
+                <real id="x">0</real>
+                <real id="y">0</real>
+                <index id="positionSpace">0</index>
+                <index id="layerOrder">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
         </behavior>
       </behaviors>
     </behavior>

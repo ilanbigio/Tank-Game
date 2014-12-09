@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id961573" PGFVersion="0.19" GSCVersion="0.10.5">
+<actor id="id449924" PGFVersion="0.19" GSCVersion="0.10.5">
   <attributes>
-    <text id="name">Bullet Display 4</text>
+    <text id="name">Red Bullet Display</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -18,42 +18,11 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">Bullet Simple</image>
+    <image id="image">Red Bullet</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
-  <behaviors>
-    <behavior id="id159077" class="RuleBehavior" enabled="true">
-      <attributes>
-        <text id="name">Rule</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
-      </attributes>
-      <conditions>
-        <condition id="id277715" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">game.attributes.id725923</text>
-            <text id="name">default name</text>
-          </attributes>
-          <predicate type="number">
-            <attributes>
-              <text id="operator">&lt;</text>
-              <real id="RHS">4</real>
-            </attributes>
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id419496" class="DestroyAction" enabled="true">
-          <attributes>
-            <text id="name">Destroy</text>
-            <text id="bundleName">Destroy.behavior</text>
-          </attributes>
-        </behavior>
-      </behaviors>
-    </behavior>
-  </behaviors>
+  <behaviors />
   <aspects>
     <graphics>
       <attributes>

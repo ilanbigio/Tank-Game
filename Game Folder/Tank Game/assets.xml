@@ -23,6 +23,9 @@
     <image name="Life Heart">
       <file name="Life Heart.png" size="910" />
     </image>
+    <image name="Red Bullet">
+      <file name="Red Bullet.png" size="210" />
+    </image>
   </images>
   <behaviors />
 </assets>

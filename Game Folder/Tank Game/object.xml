@@ -17,6 +17,8 @@
     <integer id="id890007" name="E Tank Alive?">1</integer>
     <integer id="id257246" name="Player Alive?">0</integer>
     <integer id="id596730" name="Player Life">100</integer>
+    <integer id="id376186" name="Red Bullets">5</integer>
+    <integer id="id830890" name="Drop">0</integer>
   </attributes>
   <tags />
   <resolutionIndependence>0</resolutionIndependence>
@@ -34,12 +36,15 @@
     <actor id="id942679" />
     <actor id="id581106" />
     <actor id="id308091" />
-    <actor id="id494423" />
     <actor id="id671241" />
     <actor id="id308038" />
     <actor id="id580478" />
     <actor id="id961573" />
     <actor id="id981335" />
+    <actor id="id892796" />
+    <actor id="id837880" />
+    <actor id="id449924" />
+    <actor id="id462968" />
   </prototypes>
   <plugins />
   <scenes>
